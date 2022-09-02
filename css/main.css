@@ -92,6 +92,86 @@ a {
   text-transform: uppercase;
   font-size: 45px;
   font-family: "Yeseva One", cursive;
+  font-family: Andale Mono, monospace;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+.typing-repeat-first {
+  animation: typing-repeat-first 8s steps(15) infinite,
+    blink 0.5s step-end infinite alternate;
+}
+@keyframes typing-repeat-first {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 9em;
+  }
+  100% {
+    width: 9em;
+  }
+}
+.typing-repeat-second {
+  animation: typing-repeat-second 6s steps(7) infinite,
+    blink 0.5s step-end infinite alternate;
+}
+@keyframes typing-repeat-second {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 4.2em;
+  }
+  100% {
+    width: 4.2em;
+  }
+}
+.typing-repeat-third {
+  display: inline-block;
+  width: 18.7em;
+  animation: typing-repeat-third 10s steps(31) infinite,
+    blink 0.5s step-end infinite alternate;
+}
+@keyframes typing-repeat-third {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 18.6em;
+  }
+  26% {
+    width: 18.6em;
+  }
+  100% {
+    width: 18.6em;
+  }
+}
+.typing-repeat-fourth {
+  width: 16em;
+  animation: typing-repeat-fourth 10s steps(27) infinite,
+    blink 0.5s step-end infinite alternate;
+}
+@keyframes typing-repeat-fourth {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 16em;
+  }
+  26% {
+    width: 16em;
+  }
+  100% {
+    width: 16em;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 .flex-container {
   width: 100%;
